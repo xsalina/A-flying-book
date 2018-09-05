@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+		ul,ol{
+	padding:0;
+	list-style:none;	
+   }
+
+   body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd{
+			margin:0;
+}
+body{
+	background-color:black;
+}
+div{
+	position:relative;
+	width:400px;
+	height:400px;
+	perspective:1000px;
+}
+ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width:400px;
+	height:100%;
+	margin:200px;
+	transform-style:preserve-3d;
+	animation:run 10s /*1s*/ forwards;
+}
+li{
+	position:absolute;
+	top:0;
+	left:0;
+	width:180px;
+	height:150px;
+	border:1px solid red;
+	border-right:10px solid purple;
+	border-radius:20px 0 0 20px;
+	background-color:blue;
+	color:white;
+	font-size:150px;
+	text-align:center;
+	line-height:150px;
+	transform-origin:right;
+	/*transform:rotate(50deg);*/
+	
+}
+li:nth-child(1){
+	/*width:0px;*/
+	/*font-size:40px;
+	color:deepskyblue;*/
+	transform:rotateY(92deg);
+	background-color:red;
+	animation:run1 10s 3s forwards,run1-1 10s 12s forwards;
+}
+li:nth-child(2){
+	transform:rotateY(160deg);
+	background-color:orange;
+	animation:run2 10s 3s forwards,run2-2 10s 12s forwards;
+}
+li:nth-child(3){
+	transform:rotateY(135deg);
+	background-color:yellow;
+	animation:run3 10s 3s forwards,run3-3 10s 12s forwards;
+}
+li:nth-child(4){
+	transform:rotateY(120deg);
+	background-color:cyan;
+	animation:run4 10s 3s forwards,run4-4 10s 12s forwards;
+}
+li:nth-child(5){
+	transform:rotateY(108deg);
+	background-color:skyblue;
+	animation:run5 10s 3s forwards,run5-5 10s 12s forwards;
+}
+li:nth-child(6){
+	transform:rotateY(66deg);
+	background-color:skyblue;
+	animation:run6 10s 3s forwards,run6-6 10s 12s forwards;
+}
+li:nth-child(7){
+	transform:rotateY(54deg);
+	background-color:cyan;
+	animation:run7 10s 3s forwards,run7-7 10s 12s forwards;
+}
+li:nth-child(8){
+	transform:rotateY(45deg);
+	background-color:yellow;
+	animation:run8 10s 3s forwards,run8-8 10s 12s forwards;
+}
+li:nth-child(9){
+	transform:rotateY(22deg);
+	background-color:orange;
+	animation:run9 10s 3s forwards,run9-9 10s 12s forwards;
+	
+}
+li:nth-child(10){
+	font-size:40px;
+	color:deepskyblue;
+	transform:rotateY(0deg);
+	background-color:red;
+	/*animation:run10 5s 3s forwards;*/
+}
+li:nth-child(11){
+	transform:rotateY(102deg);
+	background-color:red;
+	animation:run11 10s 3s forwards,run11-11 10s 12s forwards;
+}
+li:nth-child(12){
+	transform:rotateY(76deg);
+	background-color:red;
+	animation:run12 10s 3s forwards,run12-12 10s 12s forwards;
+}
+li:nth-child(13){
+	/*font-size:40px;
+	color:deepskyblue;*/
+	transform:rotateY(180deg);
+	background-color:#C3DEB7;
+	animation:run13 10s 3s forwards,run13-13 10s 12s forwards;
+}
+@keyframes run1{
+	0%{transform:rotateY(92deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run1-1{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(92deg);}
+}
+@keyframes run2{
+	0%{transform:rotateY(160deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run2-2{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(160deg);}
+}
+@keyframes run3{
+	0%{transform:rotateY(135deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run3-3{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(135deg);}
+}
+@keyframes run4{
+	0%{transform:rotateY(120deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run4-4{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(120deg);}
+}
+@keyframes run5{
+	0%{transform:rotateY(108deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run5-5{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(108deg);}
+}
+@keyframes run6{
+	0%{transform:rotateY(66deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run6-6{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(66deg);}
+}
+@keyframes run7{
+	0%{transform:rotateY(54deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run7-7{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(54deg);}
+}
+@keyframes run8{
+	0%{transform:rotateY(45deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run8-8{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(45deg);}
+}
+
+@keyframes run9{
+	0%{transform:rotateY(22deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run9-9{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(22deg);}
+}
+@keyframes run10{
+	
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run11{
+	0%{transform:rotateY(102deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run11-11{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(102deg);}
+}
+@keyframes run12{
+	0%{transform:rotateY(76deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run12-12{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(76deg);}
+}
+@keyframes run13{
+	0%{transform:rotateY(180deg);}
+	100%{transform:rotateY(0deg);}
+}
+@keyframes run13-13{
+	0%{transform:rotateY(0deg);}
+	100%{transform:rotateY(180deg);}
+}
+@keyframes run{
+	40%{transform:translateZ(200px) rotatex(720deg) rotateY(720deg);}
+	50%{transform:translatex(360px) rotatex(360deg) rotatex(360deg);}
+	70%{transform:translatey(260px) /*translatex(360px) */rotateX(-360deg) rotatey(360deg);}
+	90%{transform:translatez(260px) translatez(200px) rotateY(1080deg) /*scale(2)*/;}
+
+}
+</style>
+	</head>
+	<body>
+		
+		<div>
+			<ul class="clearfix">
+				<li></li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+				<li>11</li>
+				<li>12</li>
+				<li>23</li>
+				
+			</ul>
+		</div>
+	</body>
+</html>
